@@ -160,9 +160,10 @@ CACHES = {
         #'BACKEND'  : 'djmemd.cache.PyLibMCCache2',
         'BACKEND'  : 'djmemd.cache.DjangoPyLibMCCache2',
         'LOCATION' : '127.0.0.1:11211',
-        'BINARY': True,
+        'BINARY': False,
         'OPTIONS': {
             'tcp_nodelay': 1,
+            'no_block': 1,
         }
     },
 }
